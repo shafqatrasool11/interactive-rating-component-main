@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    width: 100vw;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-container{
+    background-color: hsl(213, 19%, 18%);
+    width: 397px;
+    margin: 0 20px;
+    padding: 30px;
+    border-radius: 25px;
+}
+.star{
+    padding: 10px;
+    background-color: hsl(213, 17%, 25%);
+    border-radius: 9999px;
+    margin-bottom: 35px;
+}
+h1{
+    margin-bottom: 20px;
+}
+p{
+    font-size: 15px;
+    font-weight: 300;
+    color: hsl(217, 12%, 63%);
+}
+.m-btn{
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 99999px;
+    text-transform: uppercase;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.rating{
+    padding: 13px 19px;
+    background-color: hsl(213, 17%, 25%);
+    border-radius: 9999px;
+    color: hsl(217, 12%, 63%);
+    font-size: 13pt;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.rating:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+}
+.rating-btn{
+    margin-bottom: 25px;
+    margin-top: 34px;
+}
+
+.m-btn:hover{
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+.rate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate input[type=radio]{
+    display: none;
+}
+
+.rate input[type=radio]:checked + .rating{
+    background-color: hsl(216, 12%, 54%);
+    color: #fff;
+}
+
+#second{
+    text-align: center;
+}

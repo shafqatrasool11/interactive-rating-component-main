@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <section>
+    <div id="main-container">
+    <div id="first">
+    <img class="star" src="./images/icon-star.svg" alt="star">
+
+    <h1>How did we do?</h1>
+
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
+    <div class="rating-btn">
+
+      <div class="rate">
+        <input class="inputRadio" type="radio" name="rating" id="1">
+        <label class="rating" for="1">1</label>
+        <input class="inputRadio" type="radio" name="rating" id="2">
+        <label class="rating" for="2">2</label>
+        <input class="inputRadio" type="radio" name="rating" id="3">
+        <label class="rating" for="3">3</label>
+        <input class="inputRadio" type="radio" name="rating" id="4">
+        <label class="rating" for="4">4</label>
+        <input class="inputRadio" type="radio" name="rating" id="5">
+        <label class="rating" for="5">5</label>
+      </div>
+    </div>
+    <button class="m-btn" type="submit">Submit</button>
+    </div>
+
+    <div style="display: none;" id="second">
+
+      <img  style="margin-bottom: 28px;" src="./images/illustration-thank-you.svg">
+
+      <p style=" width: fit-content; margin: auto; display: block; background-color: hsl(213, 17%, 25%); color: hsl(25, 97%, 53%); padding: 5px 15px; border-radius: 50px;">You selected <span id="rate"></span> out of 5</p>
+      <h2 style="margin: 35px 0 10px 0;" >Thank you!</h2>
+
+      <p style="font-size: 15px;">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- Rating state end -->
+
+  <script>
+    document.querySelectorAll(".inputRadio").forEach(function(elem){
+      elem.addEventListener("click",function(){
+        document.querySelector("#rate").innerHTML =  this.id;
+      })
+    })
+
+    document.querySelector(".m-btn").addEventListener("click",function(){
+      document.querySelector("#first").style.display = "none";
+      document.querySelector("#second").style.display = "block";
+    })
+  </script>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/shafqatrasool11">Shafqat Rasool</a>.
+  </div>
+</body>
+</html>
