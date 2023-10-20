@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-rating-component-shFm-J1hSD](https://www.frontendmentor.io/solutions/interactive-rating-component-shFm-J1hSD)
+- Live Site URL: [https://shafqatrasool11.github.io/interactive-rating-component-main/](https://shafqatrasool11.github.io/interactive-rating-component-main/)
 
 ## My process
 
@@ -45,7 +45,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
+- Frontend Mentor - [@shafqatrasol11](https://www.frontendmentor.io/profile/shafqatrasool11)
+- Facebook - [@shafqa8.rasool](https://www.facebook.com/shafqa8.rasool)
+- linkedin - [@shafqat-rasool](https://www.linkedin.com/in/shafqat-rasool)
